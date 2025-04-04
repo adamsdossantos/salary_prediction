@@ -2,6 +2,10 @@ import streamlit as st
 import pickle
 import numpy as np
 import os
+from xgboost import XGBRegressor
+from category_encoders import TargetEncoder
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
 
 model_path = os.path.join("pkl_files", "regressor.pkl")
 with open(model_path, "rb") as f:
