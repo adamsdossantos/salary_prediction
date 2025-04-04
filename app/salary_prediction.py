@@ -1,9 +1,15 @@
 import streamlit as st
 import pickle
 import numpy as np
+import os
 
-with open('G:\\FIAP\\3_Arquitetura_ML_e_Aprendizado\\tech_challenge\\pkl_files\\regressor.pkl', 'rb') as f:
+model_path = os.path.join("pkl_files", "regressor.pkl")
+with open(model_path, "rb") as f:
     regressor = pickle.load(f)
+
+
+# with open('G:\\FIAP\\3_Arquitetura_ML_e_Aprendizado\\tech_challenge\\pkl_files\\regressor.pkl', 'rb') as f:
+#     regressor = pickle.load(f)
 
 regressor_loaded = regressor['model']
 le_country = regressor['le_country']
