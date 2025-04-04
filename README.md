@@ -1,4 +1,4 @@
-# Previsão de Remuneração de Profissionais de TI
+# Previsão de Remuneração de Profissionais de TI 
 
 Este projeto utiliza Streamlit para criar uma aplicação web interativa que prevê o salário anual de profissionais de tecnologia com base nos dados da pesquisa Stack Overflow 2024.
 
@@ -16,7 +16,7 @@ O modelo de machine learning utilizado para prever o salário é um XGBoost Regr
 
 - Education + Country
 - Country + Industry
-- Years of Experience + Age
+- Years of Experience + Age.
 - Entre outras interações úteis para modelagem.
 
 ## Como Executar Localmente
@@ -57,6 +57,19 @@ streamlit run salary_prediction.py
 - numpy
 
 - pickle
+
+# Estrutura dos Arquivos
+````
+.
+├── app/
+│   └── salary_prediction.py           # Aplicação Streamlit principal
+├── optuna_results/
+│   └── optuna_trials_results_regression_dep.csv  # Resultados de tuning com Optuna
+├── salary_prediction.ipynb            # Notebook de análise ou desenvolvimento
+├── requirements.txt                   # Lista de dependências
+└── README.md                          # Documentação do projeto
+
+````
 
 ## Licença
 
